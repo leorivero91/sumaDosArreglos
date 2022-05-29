@@ -4,6 +4,7 @@ let arreglo1: number[] = new Array(6);
 let nro: number, indice: number;
 
 for (indice = 0; indice < 6; indice++) {
+  // lo ideal seria usar arreglo1.length ya que si necesitas cambiar la cantidad de elementos solo cambias en la primer asignacion y no en el resto del codigo.
   nro = Number(
     prompt(
       `Ingrese el número que desea incorporar en la posición ${indice} del primer arreglo: `
@@ -39,3 +40,4 @@ for (indice = 0; indice < 6; indice++) {
     `El resultado es ${arreglo1[indice]}+${arreglo2[indice]}=${sumaDosArreglos[indice]}`
   );
 } // se muestra por consola las sumas y los resultados
+//Es correcta la solucion,  se puede mejorar con funciones
